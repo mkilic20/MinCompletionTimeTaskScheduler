@@ -11,7 +11,7 @@ type Task struct {
 	dependsOn []string
 }
 
-// Function to find the minimum time to complete all tasks.
+// Function to find the minimum time to complete all tasks. Returns min time, task order, and error if any.
 func minimumCompletionTime(tasks []Task) (int, []string, error) {
 	// Create task map to store task details for quick access.
 	taskMap := make(map[string]Task)
