@@ -32,7 +32,7 @@ func minimumCompletionTime(tasks []Task) (int, []string, error) {
 	// Build the graph and in-degree count.
 	for _, task := range tasks {
 		for _, dep := range task.dependsOn {
-			if _, exists := taskMap[dep]; !exists {
+			if _, exists := taskMap[dep]; !exists { // Check if dependency exists in the task map.
 				return 0, nil, fmt.Errorf("task dependency %s does not exist", dep)
 			}
 			graph[dep] = append(graph[dep], task.name)
