@@ -25,7 +25,7 @@ Consider the following tasks and dependencies:
 ### Output
 
 For the above configuration:
-- **Minimum Completion Time:** 14 units
+- **Minimum Completion Time:** 11 units
 - **Order of Tasks:** A → B → C → D → E → F
 
 ![Execution Order](images/2.png)
@@ -40,17 +40,9 @@ The solution uses a topological sorting approach with dynamic programming to cal
 4. **Detect Cycles:** Check if all tasks are processed. If not, a circular dependency is detected.
 5. **Calculate Completion Time:** Find the maximum time in the earliest completion times map to get the minimum time required to complete all tasks.
 
-## Usage
-
 ### Prerequisites
 
 - Go (Golang) installed on your system
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your_username/task-scheduler.git
-   cd task-scheduler
-   go run main.go
 
 ## Implementation
 
