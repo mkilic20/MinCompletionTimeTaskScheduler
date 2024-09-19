@@ -25,7 +25,7 @@ Consider the following tasks and dependencies:
 ### Output
 
 For the above configuration:
-- **Minimum Completion Time:** 14 units
+- **Minimum Completion Time:** 11 units
 - **Order of Tasks:** A → B → C → D → E → F
 
 ![Execution Order](images/2.png)
