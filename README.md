@@ -58,3 +58,6 @@ The solution uses a topological sorting approach with dynamic programming to cal
 
 - If a task dependency does not exist in the task list, the program will return an error.
 - If there is a circular dependency, the program will detect it and return an error message.  
+
+### References
+- https://www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/
